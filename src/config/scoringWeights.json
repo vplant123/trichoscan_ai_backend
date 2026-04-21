@@ -1,0 +1,1111 @@
+{
+    "_comment": "TrichoScan AI — DSE Scoring Weight Matrix v1.0.3 — exact per PRD §2.3.3",
+    "version": "1.0.3",
+    "maxScorePerCondition": 50,
+    "conditions": [
+        "AGA",
+        "TE",
+        "AA",
+        "FAGA",
+        "SD",
+        "PS",
+        "CA",
+        "SA",
+        "NB",
+        "HT",
+        "POK",
+        "HA"
+    ],
+    "genderExclusions": {
+        "male": [
+            "FAGA",
+            "POK"
+        ],
+        "female": [
+            "AGA"
+        ]
+    },
+    "questions": {
+        "Q_S01_002": {
+            "male": {
+                "AGA": 2,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": null,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": null,
+                "HA": 1
+            },
+            "female": {
+                "AGA": null,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 2,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 1,
+                "HA": 1
+            },
+            "prefer_not_to_say": {
+                "AGA": 1,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 1
+            }
+        },
+        "Q_S02_001": {
+            "lt_3_months": {
+                "AGA": -1,
+                "TE": 4,
+                "AA": 3,
+                "FAGA": -1,
+                "SD": 1,
+                "PS": 0,
+                "CA": -1,
+                "SA": -1,
+                "NB": 2,
+                "HT": 2,
+                "POK": 0,
+                "HA": -2
+            },
+            "3_6_months": {
+                "AGA": 0,
+                "TE": 3,
+                "AA": 2,
+                "FAGA": 0,
+                "SD": 1,
+                "PS": 0,
+                "CA": 0,
+                "SA": -1,
+                "NB": 2,
+                "HT": 2,
+                "POK": 0,
+                "HA": -1
+            },
+            "6_12_months": {
+                "AGA": 1,
+                "TE": 1,
+                "AA": 1,
+                "FAGA": 1,
+                "SD": 1,
+                "PS": 0,
+                "CA": 1,
+                "SA": 0,
+                "NB": 1,
+                "HT": 1,
+                "POK": 1,
+                "HA": 0
+            },
+            "1_2_years": {
+                "AGA": 3,
+                "TE": -1,
+                "AA": 0,
+                "FAGA": 3,
+                "SD": 0,
+                "PS": 0,
+                "CA": 2,
+                "SA": 1,
+                "NB": -1,
+                "HT": 0,
+                "POK": 1,
+                "HA": 2
+            },
+            "2_5_years": {
+                "AGA": 4,
+                "TE": -2,
+                "AA": -1,
+                "FAGA": 4,
+                "SD": 0,
+                "PS": 0,
+                "CA": 3,
+                "SA": 2,
+                "NB": -2,
+                "HT": -1,
+                "POK": 1,
+                "HA": 3
+            },
+            "gt_5_years": {
+                "AGA": 5,
+                "TE": -3,
+                "AA": -2,
+                "FAGA": 5,
+                "SD": 0,
+                "PS": 0,
+                "CA": 4,
+                "SA": 3,
+                "NB": -3,
+                "HT": -2,
+                "POK": 2,
+                "HA": 4
+            }
+        },
+        "Q_S02_002": {
+            "gradually": {
+                "AGA": 3,
+                "TE": -1,
+                "AA": -2,
+                "FAGA": 3,
+                "SD": 0,
+                "PS": 0,
+                "CA": 2,
+                "SA": 1,
+                "NB": -1,
+                "HT": 0,
+                "POK": 1,
+                "HA": 2
+            },
+            "suddenly_within_weeks": {
+                "AGA": -2,
+                "TE": 4,
+                "AA": 3,
+                "FAGA": -2,
+                "SD": 0,
+                "PS": 0,
+                "CA": -1,
+                "SA": -1,
+                "NB": 2,
+                "HT": 2,
+                "POK": -1,
+                "HA": -2
+            }
+        },
+        "Q_S02_003": {
+            "lt_50": {
+                "AGA": -1,
+                "TE": -2,
+                "AA": -1,
+                "FAGA": -1,
+                "SD": 0,
+                "PS": 0,
+                "CA": -1,
+                "SA": 0,
+                "NB": -1,
+                "HT": -1,
+                "POK": 0,
+                "HA": -1
+            },
+            "50_100": {
+                "AGA": 1,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 1,
+                "POK": 0,
+                "HA": 0
+            },
+            "100_150": {
+                "AGA": 2,
+                "TE": 3,
+                "AA": 2,
+                "FAGA": 2,
+                "SD": 1,
+                "PS": 0,
+                "CA": 1,
+                "SA": 0,
+                "NB": 2,
+                "HT": 2,
+                "POK": 1,
+                "HA": 1
+            },
+            "150_200": {
+                "AGA": 1,
+                "TE": 4,
+                "AA": 3,
+                "FAGA": 1,
+                "SD": 1,
+                "PS": 0,
+                "CA": 2,
+                "SA": 0,
+                "NB": 3,
+                "HT": 3,
+                "POK": 1,
+                "HA": 0
+            },
+            "gt_200": {
+                "AGA": 1,
+                "TE": 5,
+                "AA": 3,
+                "FAGA": 1,
+                "SD": 1,
+                "PS": 0,
+                "CA": 2,
+                "SA": 1,
+                "NB": 3,
+                "HT": 3,
+                "POK": 1,
+                "HA": 0
+            }
+        },
+        "Q_S03_001": {
+            "none": {
+                "AGA": -1,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": -1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": -1
+            },
+            "paternal": {
+                "AGA": 4,
+                "TE": 0,
+                "AA": 1,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 2
+            },
+            "maternal": {
+                "AGA": 2,
+                "TE": 0,
+                "AA": 1,
+                "FAGA": 4,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 2
+            },
+            "both": {
+                "AGA": 5,
+                "TE": 0,
+                "AA": 2,
+                "FAGA": 5,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 4
+            }
+        },
+        "Q_S04_001": {
+            "hypothyroidism": {
+                "AGA": 0,
+                "TE": 3,
+                "AA": 1,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 5,
+                "POK": 2,
+                "HA": 0
+            },
+            "hyperthyroidism": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 1,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 4,
+                "POK": 0,
+                "HA": 0
+            },
+            "no": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": -1,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S04_002": {
+            "yes": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 4,
+                "HT": 1,
+                "POK": 1,
+                "HA": 0
+            },
+            "unsure": {
+                "AGA": 0,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 2,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "no": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": -1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S04_003": {
+            "alopecia_areata": {
+                "AGA": -2,
+                "TE": -1,
+                "AA": 5,
+                "FAGA": -2,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 2,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "psoriasis": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 1,
+                "FAGA": 0,
+                "SD": -1,
+                "PS": 5,
+                "CA": 0,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "lupus": {
+                "AGA": -2,
+                "TE": 1,
+                "AA": 2,
+                "FAGA": -2,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 4,
+                "NB": 0,
+                "HT": 1,
+                "POK": 0,
+                "HA": 0
+            },
+            "vitiligo": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 2,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S04_004": {
+            "yes": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "no": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S04_005": {
+            "none": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "covid": {
+                "AGA": 0,
+                "TE": 3,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "fever": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "surgery": {
+                "AGA": 0,
+                "TE": 4,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "other": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S04_006": {
+            "chemotherapy": {
+                "AGA": -1,
+                "TE": 5,
+                "AA": 1,
+                "FAGA": -1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "blood_thinners": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "beta_blockers": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "vitamin_a_derivatives": {
+                "AGA": 0,
+                "TE": 3,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 1,
+                "PS": 1,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "contraceptive_pill": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 1,
+                "POK": 1,
+                "HA": 0
+            }
+        },
+        "Q_S04_009": {
+            "yes": {
+                "AGA": null,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 4,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 2,
+                "POK": 5,
+                "HA": 0
+            },
+            "suspected_but_not_confirmed": {
+                "AGA": null,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 2,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 1,
+                "POK": 3,
+                "HA": 0
+            }
+        },
+        "Q_S04_010": {
+            "postpartum_lt_1_year": {
+                "AGA": null,
+                "TE": 5,
+                "AA": 0,
+                "FAGA": 1,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 2,
+                "HT": 2,
+                "POK": 1,
+                "HA": 0
+            }
+        },
+        "Q_S05_001": {
+            ">=8": {
+                "AGA": 1,
+                "TE": 4,
+                "AA": 3,
+                "FAGA": 1,
+                "SD": 2,
+                "PS": 1,
+                "CA": 0,
+                "SA": 0,
+                "NB": 1,
+                "HT": 1,
+                "POK": 2,
+                "HA": 0
+            },
+            "6_7": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 1,
+                "FAGA": 0,
+                "SD": 1,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 1,
+                "HA": 0
+            },
+            "<=5": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S05_003": {
+            "vegetarian_low_protein": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 4,
+                "HT": 1,
+                "POK": 0,
+                "HA": 0
+            },
+            "vegan": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 5,
+                "HT": 1,
+                "POK": 0,
+                "HA": 0
+            },
+            "high_junk_food": {
+                "AGA": 0,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 2,
+                "PS": 1,
+                "CA": 0,
+                "SA": 0,
+                "NB": 3,
+                "HT": 0,
+                "POK": 1,
+                "HA": 0
+            },
+            "balanced": {
+                "AGA": 0,
+                "TE": -1,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": -1,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": -2,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "irregular_eating": {
+                "AGA": 0,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 1,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 2,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S05_007": {
+            "rarely": {
+                "AGA": 0,
+                "TE": 1,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 3,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "never": {
+                "AGA": 0,
+                "TE": 2,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 4,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S06_003": {
+            "yes": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 4,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S06_004": {
+            "yes_regularly": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 5,
+                "SA": 2,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "occasionally": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 0,
+                "PS": 0,
+                "CA": 2,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S06_005": {
+            "minoxidil": {
+                "AGA": 3,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 3,
+                "SD": 0,
+                "PS": 0,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 1
+            }
+        },
+        "Q_S07_001": {
+            "yes_constant": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 1,
+                "FAGA": 0,
+                "SD": 4,
+                "PS": 3,
+                "CA": 0,
+                "SA": 2,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "yes_intermittent": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 2,
+                "PS": 2,
+                "CA": 0,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S07_002": {
+            "yes": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 1,
+                "PS": 2,
+                "CA": 0,
+                "SA": 3,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S07_003": {
+            "yes_white_dry": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 2,
+                "PS": 4,
+                "CA": 0,
+                "SA": 1,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            },
+            "yes_yellow_oily": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 5,
+                "PS": 1,
+                "CA": 0,
+                "SA": 0,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S07_004": {
+            "yes": {
+                "AGA": 0,
+                "TE": 0,
+                "AA": 0,
+                "FAGA": 0,
+                "SD": 2,
+                "PS": 3,
+                "CA": 0,
+                "SA": 2,
+                "NB": 0,
+                "HT": 0,
+                "POK": 0,
+                "HA": 0
+            }
+        },
+        "Q_S07_006": {
+            "patchy_distinct_bald_spots": {
+                "AGA": -2,
+                "TE": -1,
+                "AA": 5,
+                "FAGA": -2,
+                "SD": 0,
+                "PS": 1,
+                "CA": 1,
+                "SA": 3,
+                "NB": -1,
+                "HT": -1,
+                "POK": -1,
+                "HA": -1
+            },
+            "diffuse_all_over_thinning": {
+                "AGA": 2,
+                "TE": 3,
+                "AA": -2,
+                "FAGA": 3,
+                "SD": 1,
+                "PS": 0,
+                "CA": 0,
+                "SA": -2,
+                "NB": 2,
+                "HT": 2,
+                "POK": 2,
+                "HA": 1
+            },
+            "both": {
+                "AGA": 1,
+                "TE": 1,
+                "AA": 2,
+                "FAGA": 1,
+                "SD": 1,
+                "PS": 1,
+                "CA": 1,
+                "SA": 2,
+                "NB": 1,
+                "HT": 1,
+                "POK": 0,
+                "HA": 1
+            }
+        }
+    },
+    "sliderRanges": {
+        "Q_S05_001": {
+            "ranges": [
+                {
+                    "min": 8,
+                    "max": 10,
+                    "key": ">=8"
+                },
+                {
+                    "min": 6,
+                    "max": 7,
+                    "key": "6_7"
+                },
+                {
+                    "min": 1,
+                    "max": 5,
+                    "key": "<=5"
+                }
+            ]
+        },
+        "Q_S07_007": {
+            "ranges": [
+                {
+                    "min": 8,
+                    "max": 10,
+                    "key": "severe"
+                },
+                {
+                    "min": 5,
+                    "max": 7,
+                    "key": "moderate"
+                },
+                {
+                    "min": 1,
+                    "max": 4,
+                    "key": "mild"
+                }
+            ]
+        },
+        "Q_S09_001": {
+            "ranges": [
+                {
+                    "min": 8,
+                    "max": 10,
+                    "key": "high_impact"
+                },
+                {
+                    "min": 4,
+                    "max": 7,
+                    "key": "moderate_impact"
+                },
+                {
+                    "min": 1,
+                    "max": 3,
+                    "key": "low_impact"
+                }
+            ]
+        }
+    },
+    "severityBands": {
+        "OPTIMAL": {
+            "min": 80,
+            "max": 100
+        },
+        "MILD": {
+            "min": 60,
+            "max": 79
+        },
+        "MODERATE": {
+            "min": 40,
+            "max": 59
+        },
+        "SIGNIFICANT": {
+            "min": 20,
+            "max": 39
+        },
+        "SEVERE": {
+            "min": 0,
+            "max": 19
+        }
+    }
+}
