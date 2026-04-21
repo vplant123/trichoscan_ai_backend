@@ -1,0 +1,1681 @@
+{
+    "version": "1.1",
+    "source": "TrichoScan AI PRD v1.1 - Unified 54-Q Matrix",
+    "completionThreshold": 0.8,
+    "sections": [
+        {
+            "id": "S01",
+            "title": "Patient Profile",
+            "subtitle": "Establishing your baseline risk profile",
+            "questions": [
+                {
+                    "id": "Q_S01_001",
+                    "text": "Age Group",
+                    "desc": "Age directly affects follicle sensitivity and recovery capacity",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "under_20",
+                            "label": "Under 20"
+                        },
+                        {
+                            "value": "20_30",
+                            "label": "20–30"
+                        },
+                        {
+                            "value": "30_40",
+                            "label": "30–40"
+                        },
+                        {
+                            "value": "40_50",
+                            "label": "40–50"
+                        },
+                        {
+                            "value": "50_60",
+                            "label": "50–60"
+                        },
+                        {
+                            "value": "60_plus",
+                            "label": "60+"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S01_002",
+                    "text": "Biological Gender",
+                    "desc": "Determines the hormonal hair loss pathway and staging system used",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "male",
+                            "label": "Male"
+                        },
+                        {
+                            "value": "female",
+                            "label": "Female"
+                        },
+                        {
+                            "value": "prefer_not_to_say",
+                            "label": "Other / Prefer not to say"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_03",
+                    "text": "Climate / City Type",
+                    "desc": "Humidity, pollution, and UV levels all affect scalp oil balance",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "humid_tropical",
+                            "label": "Humid / Tropical"
+                        },
+                        {
+                            "value": "dry_arid",
+                            "label": "Dry / Arid"
+                        },
+                        {
+                            "value": "coastal_salty",
+                            "label": "Coastal / Salty air"
+                        },
+                        {
+                            "value": "moderate_mixed",
+                            "label": "Moderate / Mixed"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S01_005",
+                    "text": "Occupation Type",
+                    "desc": "Stress exposure and physical environment factor into hair health",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "desk_based",
+                            "label": "Office / Desk work"
+                        },
+                        {
+                            "value": "high_stress",
+                            "label": "High-stress (management / medical / law)"
+                        },
+                        {
+                            "value": "outdoor",
+                            "label": "Field / Outdoor work"
+                        },
+                        {
+                            "value": "industrial",
+                            "label": "Factory / Industrial"
+                        },
+                        {
+                            "value": "student",
+                            "label": "Student"
+                        },
+                        {
+                            "value": "homemaker",
+                            "label": "Homemaker"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_05",
+                    "text": "Daily Helmet / Cap Use",
+                    "desc": "Trapped heat and scalp friction accelerate follicle miniaturisation",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "never",
+                            "label": "Never"
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "Rarely (< 2x/week)"
+                        },
+                        {
+                            "value": "often",
+                            "label": "Often (4–5x/week)"
+                        },
+                        {
+                            "value": "daily",
+                            "label": "Daily all day"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S02",
+            "title": "Medical & Family History",
+            "subtitle": "Genetic predisposition and medical triggers",
+            "questions": [
+                {
+                    "id": "Q_S03_001",
+                    "text": "Family History of Baldness",
+                    "desc": "The single strongest predictor of androgenetic alopecia",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None on either side"
+                        },
+                        {
+                            "value": "paternal",
+                            "label": "Father's side only"
+                        },
+                        {
+                            "value": "maternal",
+                            "label": "Mother's side only"
+                        },
+                        {
+                            "value": "both",
+                            "label": "Both sides of family"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_07",
+                    "text": "Previous Hair Treatments Tried",
+                    "desc": "Prior treatment response guides future protocol selection",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None — first time seeking help"
+                        },
+                        {
+                            "value": "minoxidil_good",
+                            "label": "Minoxidil — worked well"
+                        },
+                        {
+                            "value": "minoxidil_partial",
+                            "label": "Minoxidil — partial response"
+                        },
+                        {
+                            "value": "minoxidil_none",
+                            "label": "Minoxidil — no response"
+                        },
+                        {
+                            "value": "prp",
+                            "label": "PRP therapy done"
+                        },
+                        {
+                            "value": "finasteride",
+                            "label": "Finasteride — worked"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S04_001",
+                    "text": "Thyroid Condition Diagnosed?",
+                    "desc": "Hypo/hyperthyroidism is a leading cause of diffuse hair loss",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "No"
+                        },
+                        {
+                            "value": "yes_medicated",
+                            "label": "Yes — diagnosed & on medication"
+                        },
+                        {
+                            "value": "suspected",
+                            "label": "Suspected, not yet tested"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S04_005",
+                    "text": "Recent Illness / Surgery / High Fever?",
+                    "desc": "Post-illness telogen effluvium causes sudden mass shedding 6–12 weeks later",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None in past 12 months"
+                        },
+                        {
+                            "value": "covid",
+                            "label": "COVID-19 (past year)"
+                        },
+                        {
+                            "value": "fever",
+                            "label": "High fever / viral illness"
+                        },
+                        {
+                            "value": "surgery",
+                            "label": "Major surgery"
+                        },
+                        {
+                            "value": "other",
+                            "label": "Other significant illness"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S04_006",
+                    "text": "On Any Long-Term Medications?",
+                    "desc": "BP meds, antidepressants, isotretinoin can all cause hair loss",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "No"
+                        },
+                        {
+                            "value": "yes",
+                            "label": "Yes (BP / antidepressants / others)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S04_009",
+                    "text": "PCOS Diagnosis? (Female Only)",
+                    "desc": "PCOS-related androgens directly cause female pattern thinning",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "n_a",
+                            "label": "Not applicable / Male"
+                        },
+                        {
+                            "value": "no",
+                            "label": "No"
+                        },
+                        {
+                            "value": "yes",
+                            "label": "Yes — diagnosed PCOS"
+                        },
+                        {
+                            "value": "suspected",
+                            "label": "Suspected"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S03",
+            "title": "Hair Loss Pattern Mapping",
+            "subtitle": "Classifying the type of alopecia",
+            "questions": [
+                {
+                    "id": "Q_S02_004",
+                    "text": "Primary Area of Hair Loss",
+                    "desc": "The pattern determines Norwood/Ludwig staging and treatment protocol",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "frontal",
+                            "label": "Frontal hairline receding"
+                        },
+                        {
+                            "value": "temples",
+                            "label": "Temple recession (sides)"
+                        },
+                        {
+                            "value": "crown",
+                            "label": "Crown / vertex thinning"
+                        },
+                        {
+                            "value": "diffuse",
+                            "label": "All-over diffuse thinning"
+                        },
+                        {
+                            "value": "patchy",
+                            "label": "Circular patchy loss"
+                        },
+                        {
+                            "value": "temples_crown",
+                            "label": "Both temples + crown"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_13",
+                    "text": "Visible Severity Right Now",
+                    "desc": "Self-assessed severity guides urgency of clinical intervention",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "mild",
+                            "label": "Mild — noticeable to me only"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — others starting to notice"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe — clearly visible bald areas"
+                        },
+                        {
+                            "value": "advanced",
+                            "label": "Advanced — extensive significant loss"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S02_002",
+                    "text": "How Did Hair Loss Begin?",
+                    "desc": "Sudden onset suggests telogen effluvium; gradual onset suggests AGA",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "sudden",
+                            "label": "Suddenly — within weeks"
+                        },
+                        {
+                            "value": "gradual",
+                            "label": "Gradually — over months or years"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S02_001",
+                    "text": "How Long Has Hair Loss Been Occurring?",
+                    "desc": "Duration directly correlates with follicle survivability",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "lt_3_months",
+                            "label": "Under 3 months"
+                        },
+                        {
+                            "value": "3_6_months",
+                            "label": "3–6 months"
+                        },
+                        {
+                            "value": "6_12_months",
+                            "label": "6–12 months"
+                        },
+                        {
+                            "value": "1_2_years",
+                            "label": "1–2 years"
+                        },
+                        {
+                            "value": "2_5_years",
+                            "label": "2–5 years"
+                        },
+                        {
+                            "value": "gt_5_years",
+                            "label": "Over 5 years"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_16",
+                    "text": "Beard / Eyebrow / Body Hair Involvement?",
+                    "desc": "Multi-site involvement suggests Alopecia Areata or hormonal cause",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "No involvement"
+                        },
+                        {
+                            "value": "beard",
+                            "label": "Beard thinning / patchy"
+                        },
+                        {
+                            "value": "eyebrow",
+                            "label": "Eyebrow thinning"
+                        },
+                        {
+                            "value": "multiple",
+                            "label": "Multiple sites affected"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S04",
+            "title": "Hair Density Analysis",
+            "subtitle": "Regional scalp coverage evaluation",
+            "questions": [
+                {
+                    "id": "Q_S07_007",
+                    "text": "Overall Hair Volume / Density Feel",
+                    "desc": "Perceived density compared to your hair 5–10 years ago",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "very_dense",
+                            "label": "Very dense — like before"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — slightly reduced"
+                        },
+                        {
+                            "value": "noticeably_thin",
+                            "label": "Noticeably thin — significant reduction"
+                        },
+                        {
+                            "value": "severely_sparse",
+                            "label": "Severely sparse — scalp clearly visible"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_18",
+                    "text": "Scalp Visibility in Natural Light",
+                    "desc": "Visible scalp index correlates strongly with follicle density loss",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "Cannot see scalp at all"
+                        },
+                        {
+                            "value": "bright_light",
+                            "label": "Slightly visible only in bright light"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderately visible normally"
+                        },
+                        {
+                            "value": "significant",
+                            "label": "Significantly visible — wide areas"
+                        },
+                        {
+                            "value": "transparent",
+                            "label": "Near transparent — severe visibility"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_19",
+                    "text": "Frontal Zone Density (Hairline Area)",
+                    "desc": "Most affected zone in male pattern baldness",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "full",
+                            "label": "Full — no noticeable thinning"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mildly thinner than before"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderately thin"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severely thin / absent"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_20",
+                    "text": "Mid-Scalp Zone Density (Top of Head)",
+                    "desc": "Mid-scalp loss indicates advancing AGA progression",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "full",
+                            "label": "Full — dense coverage"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mild thinning"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate thinning"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe thinning"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_21",
+                    "text": "Crown / Vertex Zone Density",
+                    "desc": "Crown is typically the last zone to respond to medical therapy",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "full",
+                            "label": "Full — no thinning"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mild thinning (small spot)"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — visible bald patch"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe — large bald area"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S05",
+            "title": "Hair Shaft Quality",
+            "subtitle": "Evaluating hair fiber health and integrity",
+            "questions": [
+                {
+                    "id": "Q_22",
+                    "text": "Individual Hair Strand Thickness",
+                    "desc": "Miniaturised fine hairs signal advanced follicle weakening from DHT",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "very_thick",
+                            "label": "Very thick / coarse"
+                        },
+                        {
+                            "value": "thick",
+                            "label": "Thick / normal"
+                        },
+                        {
+                            "value": "medium",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "fine",
+                            "label": "Fine / thin"
+                        },
+                        {
+                            "value": "very_fine",
+                            "label": "Very fine / barely visible"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_23",
+                    "text": "Do You Notice Finer, Shorter Hairs Near Hairline?",
+                    "desc": "Miniaturisation is the hallmark clinical sign of androgenetic alopecia",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "No — all hairs same thickness"
+                        },
+                        {
+                            "value": "slight",
+                            "label": "Slight — few thinner hairs at hairline"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — clearly thinner zone"
+                        },
+                        {
+                            "value": "significant",
+                            "label": "Significant — most hairs clearly thinner"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_24",
+                    "text": "Hair Breakage Frequency",
+                    "desc": "Mid-shaft breakage is distinct from root loss and indicates shaft damage",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "rarely",
+                            "label": "Rarely / never breaks"
+                        },
+                        {
+                            "value": "occasionally",
+                            "label": "Occasionally breaks"
+                        },
+                        {
+                            "value": "frequently",
+                            "label": "Frequently breaks"
+                        },
+                        {
+                            "value": "easily",
+                            "label": "Breaks very easily"
+                        },
+                        {
+                            "value": "constant",
+                            "label": "Constant breakage"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_25",
+                    "text": "Split End Severity",
+                    "desc": "Indicates cuticle damage and overall shaft integrity",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "No split ends"
+                        },
+                        {
+                            "value": "minimal",
+                            "label": "Minimal"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe — most tips split"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_26",
+                    "text": "Hair Texture Quality",
+                    "desc": "Texture changes signal nutritional deficiency or chemical/heat damage",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "smooth",
+                            "label": "Smooth, shiny, healthy"
+                        },
+                        {
+                            "value": "good",
+                            "label": "Generally good"
+                        },
+                        {
+                            "value": "rough",
+                            "label": "Dull / rough / frizzy"
+                        },
+                        {
+                            "value": "damaged",
+                            "label": "Very damaged / brittle / dry"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S06_003",
+                    "text": "Chemical Treatments (Color / Relax / Perm / Bleach)",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "never",
+                            "label": "Never"
+                        },
+                        {
+                            "value": "occasionally",
+                            "label": "Occasionally (< 4x/year)"
+                        },
+                        {
+                            "value": "frequently",
+                            "label": "Frequently (monthly)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S06_002",
+                    "text": "Heat Styling Frequency (Dryer / Iron / Curler)",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "never",
+                            "label": "Never"
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "Rarely"
+                        },
+                        {
+                            "value": "weekly",
+                            "label": "Weekly"
+                        },
+                        {
+                            "value": "daily",
+                            "label": "Daily"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S06",
+            "title": "Scalp Health Assessment",
+            "subtitle": "The foundation of follicle health",
+            "questions": [
+                {
+                    "id": "Q_S07_002",
+                    "text": "Scalp Oiliness Level",
+                    "desc": "Sebum imbalance disrupts the follicle microenvironment",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "normal",
+                            "label": "Normal / balanced"
+                        },
+                        {
+                            "value": "slightly_oily",
+                            "label": "Slightly oily"
+                        },
+                        {
+                            "value": "oily",
+                            "label": "Oily — greasy by midday"
+                        },
+                        {
+                            "value": "very_oily",
+                            "label": "Very oily — needs daily washing"
+                        },
+                        {
+                            "value": "dry",
+                            "label": "Dry / tight scalp"
+                        },
+                        {
+                            "value": "very_dry",
+                            "label": "Very dry / flaky / itchy"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S07_003",
+                    "text": "Dandruff Level",
+                    "desc": "Malassezia fungus overgrowth causes dandruff and scalp inflammation",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mild / occasional white flakes"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — regular dandruff"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe — heavy daily flaking"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_31",
+                    "text": "Yellowish / Greasy Scalp Flakes?",
+                    "desc": "Yellow oily scales indicate seborrheic dermatitis — a treatable condition",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "No — only white flakes if any"
+                        },
+                        {
+                            "value": "possible",
+                            "label": "Possible — some yellowish areas"
+                        },
+                        {
+                            "value": "likely",
+                            "label": "Likely — yellow greasy crusts"
+                        },
+                        {
+                            "value": "confirmed",
+                            "label": "Confirmed — diagnosed by doctor"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S07_001",
+                    "text": "Scalp Itching Intensity",
+                    "desc": "Persistent itching signals active inflammation directly harming follicles",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "No itching"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mild / occasional"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — regular discomfort"
+                        },
+                        {
+                            "value": "severe",
+                            "label": "Severe — daily distraction"
+                        },
+                        {
+                            "value": "constant",
+                            "label": "Constant / unbearable"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S07_004",
+                    "text": "Redness / Inflammation on Scalp",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "No redness"
+                        },
+                        {
+                            "value": "mild",
+                            "label": "Mild redness at hairline"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — visible patches"
+                        },
+                        {
+                            "value": "significant",
+                            "label": "Significant — widespread"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_34",
+                    "text": "Water Quality at Home",
+                    "desc": "Hard water deposits block follicles and cause mineral buildup",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "soft",
+                            "label": "Soft water (smooth feel)"
+                        },
+                        {
+                            "value": "normal",
+                            "label": "Normal / unknown"
+                        },
+                        {
+                            "value": "hard",
+                            "label": "Hard water (scale / stiff hair)"
+                        },
+                        {
+                            "value": "very_hard",
+                            "label": "Very hard (heavy deposits)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_35",
+                    "text": "Smooth, Shiny Scalp Patches with Zero Hair Regrowth?",
+                    "desc": "Scarring alopecia permanently destroys follicles — early detection is critical to halt progression",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None — all areas have some regrowth potential"
+                        },
+                        {
+                            "value": "possible",
+                            "label": "Possibly — 1–2 small smooth patches with no regrowth"
+                        },
+                        {
+                            "value": "yes",
+                            "label": "Yes — clearly visible smooth / tight scalp areas"
+                        },
+                        {
+                            "value": "confirmed",
+                            "label": "Yes — confirmed scarring alopecia by dermatologist / biopsy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S07",
+            "title": "Hair Fall Severity",
+            "subtitle": "Quantifying active shedding and loss rate",
+            "questions": [
+                {
+                    "id": "Q_S02_003",
+                    "text": "Estimated Daily Hair Fall Count",
+                    "desc": "Normal is 50–100 strands/day; above this is pathological",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "lt_50",
+                            "label": "Under 50 (within normal range)"
+                        },
+                        {
+                            "value": "50_100",
+                            "label": "50–100 strands (borderline)"
+                        },
+                        {
+                            "value": "100_150",
+                            "label": "100–150 strands (elevated)"
+                        },
+                        {
+                            "value": "150_200",
+                            "label": "150–200 strands (significant)"
+                        },
+                        {
+                            "value": "gt_200",
+                            "label": "200+ strands per day (severe)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_37",
+                    "text": "Hair Fall During Washing / Showering",
+                    "desc": "Increased shedding during wash is an early diagnostic sign",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "normal",
+                            "label": "Normal — few strands"
+                        },
+                        {
+                            "value": "slight",
+                            "label": "Slight more than before"
+                        },
+                        {
+                            "value": "much_more",
+                            "label": "Much more — alarming amounts"
+                        },
+                        {
+                            "value": "clumps",
+                            "label": "Alarming — clumps / handfuls"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_38",
+                    "text": "Hair on Pillow After Sleeping",
+                    "desc": "Nocturnal shedding indicates an active effluvium phase",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None"
+                        },
+                        {
+                            "value": "few",
+                            "label": "A few strands occasionally"
+                        },
+                        {
+                            "value": "many",
+                            "label": "Many strands regularly"
+                        },
+                        {
+                            "value": "alarming",
+                            "label": "Alarming quantity daily"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_39",
+                    "text": "Gentle Pull Test — Grasp 40–50 hairs, pull firmly",
+                    "desc": "More than 3 strands indicates active telogen effluvium",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "0_2",
+                            "label": "0–2 strands (negative — healthy)"
+                        },
+                        {
+                            "value": "3_5",
+                            "label": "3–5 strands (borderline)"
+                        },
+                        {
+                            "value": "6_10",
+                            "label": "6–10 strands (positive)"
+                        },
+                        {
+                            "value": "gt_10",
+                            "label": "10+ strands (strongly positive)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_40",
+                    "text": "Nature of Hair Loss",
+                    "desc": "Chronic loss typically indicates AGA; acute suggests a trigger event",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "acute",
+                            "label": "Acute — started suddenly"
+                        },
+                        {
+                            "value": "chronic",
+                            "label": "Chronic — ongoing for years"
+                        },
+                        {
+                            "value": "cyclical",
+                            "label": "Cyclical — comes and goes"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S08",
+            "title": "Lifestyle Risk Analysis",
+            "subtitle": "Internal triggers driving hair loss",
+            "questions": [
+                {
+                    "id": "Q_S05_001",
+                    "text": "Current Chronic Stress Level",
+                    "desc": "Cortisol elevation is proven to push follicles into the telogen (shedding) phase",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "minimal",
+                            "label": "Minimal — calm and relaxed"
+                        },
+                        {
+                            "value": "low",
+                            "label": "Low — manageable"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — regular work stress"
+                        },
+                        {
+                            "value": "high",
+                            "label": "High — significant daily stress"
+                        },
+                        {
+                            "value": "extreme",
+                            "label": "Extreme — burnout / anxiety disorder"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_002",
+                    "text": "Sleep Quality & Duration",
+                    "desc": "Growth hormone and melatonin released during sleep are critical for follicle repair",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "excellent",
+                            "label": "Excellent — 7–9 hrs, refreshed"
+                        },
+                        {
+                            "value": "good",
+                            "label": "Good — 6–7 hrs, mostly okay"
+                        },
+                        {
+                            "value": "fair",
+                            "label": "Fair — 5–6 hrs, often tired"
+                        },
+                        {
+                            "value": "poor",
+                            "label": "Poor — under 5 hrs / disturbed"
+                        },
+                        {
+                            "value": "insomnia",
+                            "label": "Insomnia — severe sleep disorder"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_003",
+                    "text": "Overall Diet Quality",
+                    "desc": "Nutrient-poor diets deprive follicles of essential building blocks",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "excellent",
+                            "label": "Excellent — varied, whole foods"
+                        },
+                        {
+                            "value": "good",
+                            "label": "Mostly healthy"
+                        },
+                        {
+                            "value": "average",
+                            "label": "Average — mix of healthy and junk"
+                        },
+                        {
+                            "value": "poor",
+                            "label": "Poor — frequent junk / processed food"
+                        },
+                        {
+                            "value": "very_poor",
+                            "label": "Very poor — minimal nutrition"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_007",
+                    "text": "Daily Protein Intake Level",
+                    "desc": "Hair is 95% keratin — protein deficiency directly weakens follicle output",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "high",
+                            "label": "High — meat/fish/legumes every meal"
+                        },
+                        {
+                            "value": "adequate",
+                            "label": "Adequate — most meals have protein"
+                        },
+                        {
+                            "value": "low",
+                            "label": "Low — often skipping protein sources"
+                        },
+                        {
+                            "value": "very_low",
+                            "label": "Very low — near-vegetarian / minimal"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_45",
+                    "text": "Daily Water Intake",
+                    "desc": "Dehydration affects scalp microcirculation and toxin clearance",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "gt_3_l",
+                            "label": "3+ litres / day"
+                        },
+                        {
+                            "value": "2_3_l",
+                            "label": "2–3 litres / day"
+                        },
+                        {
+                            "value": "1_2_l",
+                            "label": "1–2 litres / day"
+                        },
+                        {
+                            "value": "lt_1_l",
+                            "label": "Under 1 litre / day"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_004",
+                    "text": "Smoking",
+                    "desc": "Nicotine constricts scalp blood vessels — a proven hair loss accelerant",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "never",
+                            "label": "Never smoked"
+                        },
+                        {
+                            "value": "quit",
+                            "label": "Quit (past 1 year)"
+                        },
+                        {
+                            "value": "occasional",
+                            "label": "Occasional (social smoker)"
+                        },
+                        {
+                            "value": "regular",
+                            "label": "Regular (< 1 pack/day)"
+                        },
+                        {
+                            "value": "heavy",
+                            "label": "Heavy (1+ pack/day)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_005",
+                    "text": "Alcohol Consumption",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None"
+                        },
+                        {
+                            "value": "occasional",
+                            "label": "Occasional (1–2x/month)"
+                        },
+                        {
+                            "value": "regular",
+                            "label": "Regular (weekly)"
+                        },
+                        {
+                            "value": "heavy",
+                            "label": "Heavy (daily / binge)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_48",
+                    "text": "Gym Supplements / Performance Enhancers",
+                    "desc": "Anabolic steroids and testosterone boosters significantly raise DHT",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None"
+                        },
+                        {
+                            "value": "basic",
+                            "label": "Basic vitamins / whey protein"
+                        },
+                        {
+                            "value": "creatine",
+                            "label": "Creatine"
+                        },
+                        {
+                            "value": "pre_workout",
+                            "label": "Pre-workout / testosterone boosters"
+                        },
+                        {
+                            "value": "anabolic",
+                            "label": "Anabolic steroids"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S05_006",
+                    "text": "Exercise / Physical Activity",
+                    "desc": "Regular exercise improves scalp circulation and reduces cortisol",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "daily",
+                            "label": "Daily"
+                        },
+                        {
+                            "value": "3_5_times",
+                            "label": "3–5 times/week"
+                        },
+                        {
+                            "value": "1_2_times",
+                            "label": "1–2 times/week"
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "Rarely"
+                        },
+                        {
+                            "value": "sedentary",
+                            "label": "Sedentary — almost never"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S09",
+            "title": "Hair Care & Habits",
+            "subtitle": "Routine habits and environmental exposures",
+            "questions": [
+                {
+                    "id": "Q0_50",
+                    "text": "Hair Washing Frequency",
+                    "desc": "Overwashing strips natural oils; underwashing causes product buildup",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "daily",
+                            "label": "Daily"
+                        },
+                        {
+                            "value": "alternate",
+                            "label": "Every alternate day"
+                        },
+                        {
+                            "value": "2_3_times",
+                            "label": "2–3 times per week"
+                        },
+                        {
+                            "value": "weekly",
+                            "label": "Once a week"
+                        },
+                        {
+                            "value": "lt_weekly",
+                            "label": "Less than once a week"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_51",
+                    "text": "Shampoo Type Used",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "medicated",
+                            "label": "Anti-hair loss / medicated"
+                        },
+                        {
+                            "value": "gentle",
+                            "label": "Gentle / sulphate-free"
+                        },
+                        {
+                            "value": "commercial",
+                            "label": "Regular commercial shampoo"
+                        },
+                        {
+                            "value": "harsh",
+                            "label": "Harsh / high SLS content"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_52",
+                    "text": "Scalp Oiling Practice",
+                    "desc": "Regular light oiling improves circulation; heavy overnight oiling can clog follicles",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "light",
+                            "label": "Regular and light (1–2x/week)"
+                        },
+                        {
+                            "value": "heavy",
+                            "label": "Regular and heavy / overnight"
+                        },
+                        {
+                            "value": "occasional",
+                            "label": "Occasionally"
+                        },
+                        {
+                            "value": "never",
+                            "label": "Never"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_53",
+                    "text": "Sun / UV Exposure Level",
+                    "desc": "Excessive UV causes oxidative stress on scalp and follicles",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "minimal",
+                            "label": "Minimal — indoor mostly"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "Moderate — occasional outdoor"
+                        },
+                        {
+                            "value": "high",
+                            "label": "High — regular outdoor exposure"
+                        },
+                        {
+                            "value": "extreme",
+                            "label": "All-day outdoor exposure"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_54",
+                    "text": "Your Primary Treatment Goal",
+                    "desc": "Helps personalise the treatment plan to your specific objective",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "options": [
+                        {
+                            "value": "stop_fall",
+                            "label": "Stop further hair fall"
+                        },
+                        {
+                            "value": "regrow",
+                            "label": "Regrow lost hair"
+                        },
+                        {
+                            "value": "density",
+                            "label": "Improve overall density"
+                        },
+                        {
+                            "value": "transplant",
+                            "label": "Explore hair transplant options"
+                        },
+                        {
+                            "value": "scalp_health",
+                            "label": "Improve scalp health first"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "S10",
+            "title": "Female Hormonal & Reproductive Health",
+            "subtitle": "Female-specific triggers for hair loss",
+            "questions": [
+                {
+                    "id": "Q_S10_001",
+                    "text": "Pregnancy / Postpartum / Breastfeeding Status",
+                    "desc": "Postpartum hair loss typically begins 2–4 months after delivery and lasts 6–12 months",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "None — not pregnant / not postpartum"
+                        },
+                        {
+                            "value": "pregnant",
+                            "label": "Currently pregnant"
+                        },
+                        {
+                            "value": "postpartum_lt_6",
+                            "label": "Postpartum — under 6 months"
+                        },
+                        {
+                            "value": "postpartum_6_12",
+                            "label": "Postpartum — 6–12 months"
+                        },
+                        {
+                            "value": "breastfeeding",
+                            "label": "Currently breastfeeding"
+                        },
+                        {
+                            "value": "postpartum_gt_1",
+                            "label": "Postpartum — over 1 year ago"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S10_002",
+                    "text": "Menstrual Cycle & Hormonal Status",
+                    "desc": "Irregular or absent periods often signal hormonal imbalances",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "regular",
+                            "label": "Regular cycle (21–35 days)"
+                        },
+                        {
+                            "value": "irregular",
+                            "label": "Irregular cycle"
+                        },
+                        {
+                            "value": "absent",
+                            "label": "Absent / amenorrhea"
+                        },
+                        {
+                            "value": "perimenopause",
+                            "label": "Perimenopause (approaching menopause)"
+                        },
+                        {
+                            "value": "postmenopause",
+                            "label": "Post-menopause"
+                        },
+                        {
+                            "value": "prefer_not_to_say",
+                            "label": "Prefer not to say"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S10_003",
+                    "text": "Oral Contraceptive Pill (OCP) / Hormonal Contraception Use",
+                    "desc": "Certain progestin-dominant OCPs have androgenic activity",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "never",
+                            "label": "Never used"
+                        },
+                        {
+                            "value": "current",
+                            "label": "Currently using OCP / hormonal contraception"
+                        },
+                        {
+                            "value": "stopped_lt_6",
+                            "label": "Stopped OCP — under 6 months ago"
+                        },
+                        {
+                            "value": "stopped_gt_6",
+                            "label": "Stopped OCP — over 6 months ago"
+                        },
+                        {
+                            "value": "recently_switched",
+                            "label": "Recently switched OCP brand"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S10_004",
+                    "text": "Significant Weight Loss in Past 12 Months",
+                    "desc": "Rapid weight loss is a documented trigger for telogen effluvium",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "No significant weight change"
+                        },
+                        {
+                            "value": "minor",
+                            "label": "Minor loss / gain (under 5 kg)"
+                        },
+                        {
+                            "value": "moderate",
+                            "label": "5–10 kg loss (moderate trigger)"
+                        },
+                        {
+                            "value": "significant",
+                            "label": "Over 10 kg loss (significant trigger)"
+                        },
+                        {
+                            "value": "crash_diet",
+                            "label": "Crash / very low calorie diet (< 1,000 kcal/day)"
+                        }
+                    ]
+                },
+                {
+                    "id": "Q_S10_005",
+                    "text": "PCOS-Related Symptoms",
+                    "desc": "PCOS causes elevated androgens which trigger female androgenetic alopecia",
+                    "type": "SINGLE_SELECT",
+                    "mandatory": true,
+                    "conditional": {
+                        "dependsOn": "Q_S01_002",
+                        "operator": "equals",
+                        "value": "female"
+                    },
+                    "options": [
+                        {
+                            "value": "none",
+                            "label": "No PCOS symptoms"
+                        },
+                        {
+                            "value": "irregular_periods",
+                            "label": "Irregular periods only"
+                        },
+                        {
+                            "value": "acne_hirsutism",
+                            "label": "Acne + facial / body hair growth (hirsutism)"
+                        },
+                        {
+                            "value": "weight_gain_fatigue",
+                            "label": "Weight gain + fatigue + brain fog"
+                        },
+                        {
+                            "value": "multiple",
+                            "label": "Multiple PCOS symptoms present"
+                        },
+                        {
+                            "value": "confirmed",
+                            "label": "PCOS confirmed by doctor / ultrasound"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
